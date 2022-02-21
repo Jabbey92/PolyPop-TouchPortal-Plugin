@@ -1,0 +1,58 @@
+{
+  "sdk": 3,
+  "version": 100,
+  "name": "TouchPortalPolyPopPlugin",
+  "id": "com.github.Jabbey92.TouchPortal.PolyPop.TouchPortalPolyPopPlugin",
+  "configuration": {
+    "colorDark": "#3c0c1e",
+    "colorLight": "#dc0c5b"
+  },
+  "plugin_start_cmd": "",
+  "settings": [
+    {
+      "name": "Address",
+      "type": "text",
+      "default": "localhost",
+      "readOnly": false
+    },
+    {
+      "name": "Port",
+      "type": "number",
+      "default": "83032",
+      "readOnly": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "com.github.Jabbey92.TouchPortal.PolyPop.TouchPortalPolyPopPlugin.BaseCategory",
+      "name": "PolyPop",
+      "imagepath": "%TP_PLUGIN_FOLDER%TouchPortalPolyPopPlugin/images/icon-24.png",
+      "actions": [
+        {
+          "id": "com.github.Jabbey92.TouchPortal.PolyPop.TouchPortalPolyPopPlugin.TriggerAlert",
+          "name": "Trigger Alert",
+          "prefix": "plugin",
+          "type": "communicate",
+          "tryInline": true,
+          "format": "Trigger Alert {$com.github.Jabbey92.TouchPortal.PolyPop.TouchPortalPolyPopPlugin.TriggerAlert.data.AlertToRun$} with arguments {$com.github.Jabbey92.TouchPortal.PolyPop.TouchPortalPolyPopPlugin.TriggerAlert.data.Arguments$} (example: key1=value,key2=value2)",
+          "hasHoldFunctionality": false,
+          "data": [
+            {
+              "type": "text",
+              "label": "actionToRun",
+              "default": "",
+              "valueChoices": [],
+              "id": "com.github.Jabbey92.TouchPortal.PolyPop.TouchPortalPolyPopPlugin.TriggerAlert.data.AlertToRun"
+            },
+            {
+              "type": "text",
+              "label": "arguments",
+              "default": "",
+              "id": "com.github.Jabbey92.TouchPortal.PolyPop.TouchPortalPolyPopPlugin.TriggerAlert.data.Arguments"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
