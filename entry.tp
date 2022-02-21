@@ -7,7 +7,7 @@
     "colorDark": "#3c0c1e",
     "colorLight": "#dc0c5b"
   },
-  "plugin_start_cmd": "",
+  "plugin_start_cmd": "python3 ./PolyPopTouchPortalPlugin.py",
   "settings": [
     {
       "name": "Address",

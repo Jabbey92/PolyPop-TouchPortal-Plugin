@@ -2,8 +2,6 @@ import asyncio
 import pip
 import sqlite3
 
-# python3 ./PolyPopTouchPortalPlugin.py
-
 try:
     from loguru import logger
 except ImportError:
